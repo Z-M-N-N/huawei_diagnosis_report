@@ -1,0 +1,4 @@
+time: 2026-10-15 16:46:43
+dataset: balanced per diag_item, 正负各 k=min(pos,neg,150) -> 每项<=300, seed=42
+cmd: python src/inference.py --model_path Model/good_pvd_merged --test_json out/pvd_no_mv_2026-10-15_balanced/input/test_balanced.json --diag_item_config Data/diag_info.json --diag_item all --sample_size 0 --num_frames 16 --torch_dtype bfloat16 --save_results out/pvd_no_mv_2026-10-15_balanced
+CUDA_VISIBLE_DEVICES=2

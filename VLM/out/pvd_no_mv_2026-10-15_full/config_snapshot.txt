@@ -1,0 +1,4 @@
+time: 2026-10-15 17:44:02
+purpose: selective prediction on FULL non-balanced test
+cmd: python src/inference.py --model_path Model/good_pvd_merged --test_json out/pvd_no_mv_2026-10-15/input/test_remap.json --diag_item_config Data/diag_info.json --diag_item all --sample_size 0 --num_frames 16 --torch_dtype bfloat16 --save_results out/pvd_no_mv_2026-10-15_full
+CUDA_VISIBLE_DEVICES=2

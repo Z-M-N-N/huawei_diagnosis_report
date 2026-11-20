@@ -1,0 +1,817 @@
+[run_chat_moe] 输入: /home/mzhao/ECHO_VIEW/EchoView-main/MoE/data/test_batch_200.json
+[run_chat_moe] GPU: 5
+[run_chat_moe] 处理中(进度见终端), 结果写入: /home/mzhao/ECHO_VIEW/EchoView-main/MoE/data/result_test_batch_200.json
+[chat_moe] 提示: 未找到 /home/mzhao/ECHO_VIEW/EchoView-main/MoE/outputs_echo_router/checkpoints/best.pt
+[chat_moe] 自动回退到小规模 3 类路由模型: /home/mzhao/ECHO_VIEW/EchoView-main/MoE/outputs_echo_router_small/checkpoints/best.pt
+[chat_moe] MoE checkpoint: /home/mzhao/ECHO_VIEW/EchoView-main/MoE/outputs_echo_router_small/checkpoints/best.pt
+
+[chat_moe] === 样本 1/200 id=Dataset/group_1/2024052120305300050569557e8 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 3/6 路视频匹配
+[chat_moe] 加载 Qwen 模型: /home/mzhao/ECHO_VIEW/EchoView-main/../weights_lora/Model/vlm_best_merged_model_AVD
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.16s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.12s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.10s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.23it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.08it/s]
+The tokenizer you are loading from '/home/mzhao/ECHO_VIEW/EchoView-main/../weights_lora/Model/vlm_best_merged_model_AVD' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+qwen-vl-utils using decord to read video.
+
+[chat_moe] === 样本 2/200 id=Dataset/group_5/2024040114273600050569525e9 diag_item=心包积液 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+[chat_moe] 加载 Qwen 模型: /home/mzhao/ECHO_VIEW/EchoView-main/../weights_lora/Model/vlm_best_merged_model_PVD
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.15s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.12s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.12s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.21it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.07it/s]
+The tokenizer you are loading from '/home/mzhao/ECHO_VIEW/EchoView-main/../weights_lora/Model/vlm_best_merged_model_PVD' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+
+[chat_moe] === 样本 3/200 id=Dataset/group_2/2024042515474600050569525e9 diag_item=收缩活动减弱 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 4/200 id=Dataset/group_3/2024052101542200050569557e8 diag_item=主动脉窦部增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 5/200 id=Dataset/group_2/2024052106243400050569557e8 diag_item=主动脉窦部增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 6/200 id=Dataset/group_5/2024041622220500050569525e9 diag_item=三尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 7/200 id=Dataset/group_1/2024041616400100050569525e9 diag_item=右房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 8/200 id=Dataset/group_4/2024052220053500050569557e8 diag_item=双房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 9/200 id=Dataset/group_1/2024051902484400050569557e8 diag_item=右室增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 10/200 id=Dataset/group_3/2024041914091000050569525e9 diag_item=二尖瓣狭窄 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 11/200 id=Dataset/group_4/2024043014014900050569525e9 diag_item=室间隔基底段增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 3/7 路视频匹配
+
+[chat_moe] === 样本 12/200 id=Dataset/group_4/2024052214355900050569557e8 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 5/6 路视频匹配
+
+[chat_moe] === 样本 13/200 id=Dataset/group_1/2024042611152300050569525e9 diag_item=人工支架 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 14/200 id=Dataset/group_5/2024041909162400050569525e9 diag_item=心包积液 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 15/200 id=Dataset/group_1/2024043020535000050569525e9 diag_item=升主动脉增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 16/200 id=Dataset/group_4/2024052312223300050569557e8 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 2/6 路视频匹配
+
+[chat_moe] === 样本 17/200 id=Dataset/group_3/2024051918555000050569557e8 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 2/6 路视频匹配
+
+[chat_moe] === 样本 18/200 id=Dataset/group_3/2024040823422200050569525e9 diag_item=左房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 19/200 id=Dataset/group_3/2024052004421100050569557e8 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 1/6 路视频匹配
+
+[chat_moe] === 样本 20/200 id=Dataset/group_5/2024040115025600050569525e9 diag_item=二尖瓣狭窄 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 21/200 id=Dataset/group_3/2024042208492300050569525e9 diag_item=升主动脉增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 22/200 id=Dataset/group_1/2024041615114000050569525e9 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 2/6 路视频匹配
+
+[chat_moe] === 样本 23/200 id=Dataset/group_3/2024052123273900050569557e8 diag_item=主动脉瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 24/200 id=Dataset/group_1/2024052013482000050569557e8 diag_item=主动脉窦部增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 25/200 id=Dataset/group_3/2024052317103800050569557e8 diag_item=室间隔基底段增厚 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 26/200 id=Dataset/group_2/2024052212091300050569557e8 diag_item=双房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 27/200 id=Dataset/group_1/20240130224428000505695f0c0 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 5/6 路视频匹配
+
+[chat_moe] === 样本 28/200 id=Dataset/group_3/2024042314120900050569525e9 diag_item=室间隔基底段增厚 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 29/200 id=Dataset/group_4/2024041711342600050569525e9 diag_item=心尖部增厚 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 30/200 id=Dataset/group_2/2024042622304600050569525e9 diag_item=心包积液 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 4/7 路视频匹配
+
+[chat_moe] === 样本 31/200 id=Dataset/group_1/2024041010060800050569525e9 diag_item=室间隔基底段增厚 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 32/200 id=Dataset/group_1/2024031903002900050569525e9 diag_item=主动脉瓣钙化 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 33/200 id=Dataset/group_4/2024022413002500050569525e9 diag_item=左房增大 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 4/6 路视频匹配
+
+[chat_moe] === 样本 34/200 id=Dataset/group_1/2024022823221700050569525e9 diag_item=右室增大 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 3/4 路视频匹配
+
+[chat_moe] === 样本 35/200 id=Dataset/group_3/2024042510142100050569525e9 diag_item=右房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 36/200 id=Dataset/group_1/2024052004072100050569557e8 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 3/6 路视频匹配
+
+[chat_moe] === 样本 37/200 id=Dataset/group_4/2024052408083600050569557e8 diag_item=主动脉瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 38/200 id=Dataset/group_4/2024040523004600050569525e9 diag_item=心尖部增厚 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 39/200 id=Dataset/group_4/2024040810444500050569525e9 diag_item=室间隔基底段增厚 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 40/200 id=Dataset/group_5/2024041621051100050569525e9 diag_item=心包积液 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 41/200 id=Dataset/group_4/2024040113490600050569525e9 diag_item=主动脉窦部增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 42/200 id=Dataset/group_5/2024052423141400050569557e8 diag_item=心包积液 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 43/200 id=Dataset/group_5/2024052221195100050569557e8 diag_item=右房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 44/200 id=Dataset/group_1/2024031514304600050569525e9 diag_item=右房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 45/200 id=Dataset/group_1/2024052311022400050569557e8 diag_item=室壁瘤 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 46/200 id=Dataset/group_4/2024052310572500050569557e8 diag_item=心包积液 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 47/200 id=Dataset/group_3/2024052305482000050569557e8 diag_item=二尖瓣狭窄 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 48/200 id=Dataset/group_2/2024051902222100050569557e8 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 2/6 路视频匹配
+
+[chat_moe] === 样本 49/200 id=Dataset/group_4/2024052400325400050569557e8 diag_item=收缩活动减弱 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 50/200 id=Dataset/group_3/2024051104460200050569557e8 diag_item=三尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 51/200 id=Dataset/group_4/2024042021120500050569525e9 diag_item=右房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 52/200 id=Dataset/group_5/2024041522003200050569525e9 diag_item=三尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 53/200 id=Dataset/group_3/2024032720471800050569525e9 diag_item=瓣环钙化 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 54/200 id=Dataset/group_3/2024051822154000050569557e8 diag_item=左房增大 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 4/6 路视频匹配
+
+[chat_moe] === 样本 55/200 id=Dataset/group_1/2024052308230400050569557e8 diag_item=二尖瓣脱垂 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 56/200 id=Dataset/group_5/2024052213054400050569557e8 diag_item=左房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 57/200 id=Dataset/group_1/2024051922000700050569557e8 diag_item=二叶式主动脉瓣 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 58/200 id=Dataset/group_1/2024043003105200050569525e9 diag_item=升主动脉增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 59/200 id=Dataset/group_5/2024042509493100050569525e9 diag_item=二尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 60/200 id=Dataset/group_3/2024052407392100050569557e8 diag_item=主动脉瓣钙化 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 61/200 id=Dataset/group_3/2024042608431800050569525e9 diag_item=二尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 62/200 id=Dataset/group_5/2024051822292500050569557e8 diag_item=收缩活动减弱 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 2/9 路视频匹配
+
+[chat_moe] === 样本 63/200 id=Dataset/group_2/2024052204294600050569557e8 diag_item=升主动脉增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 64/200 id=Dataset/group_5/2024051906222300050569557e8 diag_item=心包积液 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 65/200 id=Dataset/group_3/2024051922464500050569557e8 diag_item=收缩活动减弱 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 2/9 路视频匹配
+
+[chat_moe] === 样本 66/200 id=Dataset/group_5/2024042309483100050569525e9 diag_item=三尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 67/200 id=Dataset/group_3/2024051901450200050569557e8 diag_item=心尖部增厚 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 68/200 id=Dataset/group_1/2024051920350100050569557e8 diag_item=心包积液 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 3/7 路视频匹配
+
+[chat_moe] === 样本 69/200 id=Dataset/group_1/2024052202445500050569557e8 diag_item=心尖部增厚 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 70/200 id=Dataset/group_3/2024042823544900050569525e9 diag_item=起搏器 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 71/200 id=Dataset/group_3/2024052104051700050569557e8 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 5/6 路视频匹配
+
+[chat_moe] === 样本 72/200 id=Dataset/group_1/2024052206321900050569557e8 diag_item=心包积液 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 73/200 id=Dataset/group_1/2024052321082800050569557e8 diag_item=主动脉瓣增厚 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 74/200 id=Dataset/group_5/2024041710464700050569525e9 diag_item=二尖瓣脱垂 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 75/200 id=Dataset/group_2/2024040510530200050569525e9 diag_item=右房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 76/200 id=Dataset/group_3/2024051902510100050569557e8 diag_item=二尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 77/200 id=Dataset/group_4/2024042523500100050569525e9 diag_item=二尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 78/200 id=Dataset/group_1/2024040303144200050569525e9 diag_item=主动脉窦部增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 79/200 id=Dataset/group_2/2024052315000600050569557e8 diag_item=人工支架 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 80/200 id=Dataset/group_1/2024041223023700050569525e9 diag_item=二尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 81/200 id=Dataset/group_5/2024052315342100050569557e8 diag_item=二尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 82/200 id=Dataset/group_3/2024031821001600050569525e9 diag_item=左房增大 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 5/6 路视频匹配
+
+[chat_moe] === 样本 83/200 id=Dataset/group_4/2024052406551300050569557e8 diag_item=心包积液 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 84/200 id=Dataset/group_2/2024052209103000050569557e8 diag_item=左房增大 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 1/6 路视频匹配
+
+[chat_moe] === 样本 85/200 id=Dataset/group_1/2024031621364300050569525e9 diag_item=心包积液 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 5/7 路视频匹配
+
+[chat_moe] === 样本 86/200 id=Dataset/group_2/2024041115191800050569525e9 diag_item=双房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 87/200 id=Dataset/group_1/2024040910244900050569525e9 diag_item=主动脉瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 88/200 id=Dataset/group_4/2024041221524100050569525e9 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 2/6 路视频匹配
+
+[chat_moe] === 样本 89/200 id=Dataset/group_5/2024052223244100050569557e8 diag_item=室壁瘤 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 90/200 id=Dataset/group_4/2024040902112600050569525e9 diag_item=心尖部增厚 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 91/200 id=Dataset/group_2/2024042510073900050569525e9 diag_item=主动脉瓣钙化 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 92/200 id=Dataset/group_1/2024052222405600050569557e8 diag_item=主动脉窦部增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 93/200 id=Dataset/group_3/2024041713553000050569525e9 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 4/6 路视频匹配
+
+[chat_moe] === 样本 94/200 id=Dataset/group_3/2024041314221200050569525e9 diag_item=主动脉窦部增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 95/200 id=Dataset/group_4/2024052307464900050569557e8 diag_item=收缩活动减弱 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 2/9 路视频匹配
+
+[chat_moe] === 样本 96/200 id=Dataset/group_1/2024040809515700050569525e9 diag_item=左房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 97/200 id=Dataset/group_1/2024052016031400050569557e8 diag_item=升主动脉增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 98/200 id=Dataset/group_2/2024040610455700050569525e9 diag_item=室间隔基底段增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 5/7 路视频匹配
+
+[chat_moe] === 样本 99/200 id=Dataset/group_1/2024052322494200050569557e8 diag_item=主动脉瓣狭窄 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 100/200 id=Dataset/group_5/2024051906265600050569557e8 diag_item=心包积液 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 101/200 id=Dataset/group_1/2024052319200200050569557e8 diag_item=室间隔基底段增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 1/7 路视频匹配
+
+[chat_moe] === 样本 102/200 id=Dataset/group_4/2024052215524600050569557e8 diag_item=主动脉瓣钙化 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 103/200 id=Dataset/group_1/2024040314492100050569525e9 diag_item=主动脉窦部增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 104/200 id=Dataset/group_3/2024042802075100050569525e9 diag_item=主动脉窦部增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 105/200 id=Dataset/group_5/2024052017543200050569557e8 diag_item=左房增大 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 4/6 路视频匹配
+
+[chat_moe] === 样本 106/200 id=Dataset/group_4/2024052412525700050569557e8 diag_item=人工主动脉瓣 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 107/200 id=Dataset/group_1/2024042620563900050569525e9 diag_item=收缩活动减弱 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 108/200 id=Dataset/group_4/2024052311370200050569557e8 diag_item=左房增大 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 2/6 路视频匹配
+
+[chat_moe] === 样本 109/200 id=Dataset/group_3/2024052316533900050569557e8 diag_item=主动脉瓣钙化 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 110/200 id=Dataset/group_4/2024043008460800050569525e9 diag_item=人工主动脉瓣 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 111/200 id=Dataset/group_1/2024052116285000050569557e8 diag_item=二尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 112/200 id=Dataset/group_1/2024051821310900050569557e8 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 1/6 路视频匹配
+
+[chat_moe] === 样本 113/200 id=Dataset/group_2/2024052413202200050569557e8 diag_item=二尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 114/200 id=Dataset/group_5/2024041109250300050569525e9 diag_item=双房增大 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 5/9 路视频匹配
+
+[chat_moe] === 样本 115/200 id=Dataset/group_5/2024041709551900050569525e9 diag_item=右房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 116/200 id=Dataset/group_1/2024052409315900050569557e8 diag_item=左房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 117/200 id=Dataset/group_1/2024041721241300050569525e9 diag_item=起搏器 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 118/200 id=Dataset/group_4/2024040122574600050569525e9 diag_item=间隔缺损 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 1/7 路视频匹配
+
+[chat_moe] === 样本 119/200 id=Dataset/group_3/2024042520591700050569525e9 diag_item=心包积液 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 2/7 路视频匹配
+
+[chat_moe] === 样本 120/200 id=Dataset/group_1/2024040113594800050569525e9 diag_item=人工主动脉瓣 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 121/200 id=Dataset/group_3/20240122143120000505695f0c0 diag_item=心包积液 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 5/7 路视频匹配
+
+[chat_moe] === 样本 122/200 id=Dataset/group_4/2024050613505800050569525e9 diag_item=室间隔基底段增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 2/7 路视频匹配
+
+[chat_moe] === 样本 123/200 id=Dataset/group_1/20240127042044000505695f0c0 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 4/6 路视频匹配
+
+[chat_moe] === 样本 124/200 id=Dataset/group_3/2024052305202000050569557e8 diag_item=主动脉瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 125/200 id=Dataset/group_3/2024052401164500050569557e8 diag_item=二尖瓣脱垂 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 126/200 id=Dataset/group_3/2024052422294100050569557e8 diag_item=二叶式主动脉瓣 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 127/200 id=Dataset/group_3/2024052318092000050569557e8 diag_item=心尖部增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 2/7 路视频匹配
+
+[chat_moe] === 样本 128/200 id=Dataset/group_1/2024041603405200050569525e9 diag_item=左房增大 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 3/6 路视频匹配
+
+[chat_moe] === 样本 129/200 id=Dataset/group_4/2024052218461400050569557e8 diag_item=左房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 130/200 id=Dataset/group_1/2024052014094200050569557e8 diag_item=双房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 131/200 id=Dataset/group_3/2024051904590100050569557e8 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 1/6 路视频匹配
+
+[chat_moe] === 样本 132/200 id=Dataset/group_5/2024042423232400050569525e9 diag_item=二尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 133/200 id=Dataset/group_5/2024042908250700050569525e9 diag_item=人工支架 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 134/200 id=Dataset/group_4/2024042914172200050569525e9 diag_item=主动脉瓣增厚 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 135/200 id=Dataset/group_2/2024052214290700050569557e8 diag_item=右房增大 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 3/4 路视频匹配
+
+[chat_moe] === 样本 136/200 id=Dataset/group_1/2024042309305000050569525e9 diag_item=二尖瓣脱垂 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 137/200 id=Dataset/group_5/2024050721140100050569557e8 diag_item=三尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 138/200 id=Dataset/group_2/2024032010240100050569525e9 diag_item=左房增大 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 1/6 路视频匹配
+
+[chat_moe] === 样本 139/200 id=Dataset/group_4/2024042103041300050569525e9 diag_item=主动脉瓣钙化 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 140/200 id=Dataset/group_3/2024041304190400050569525e9 diag_item=右室增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 141/200 id=Dataset/group_1/2024051917272100050569557e8 diag_item=人工主动脉瓣 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 142/200 id=Dataset/group_1/20240205200750000505695f0c0 diag_item=室间隔基底段增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 3/7 路视频匹配
+
+[chat_moe] === 样本 143/200 id=Dataset/group_3/2024040214245700050569525e9 diag_item=主动脉瓣钙化 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 144/200 id=Dataset/group_4/2024052218222500050569557e8 diag_item=二尖瓣狭窄 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 145/200 id=Dataset/group_1/2024011713370900050569557e8 diag_item=心包积液 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 146/200 id=Dataset/group_5/2024042423232400050569525e9 diag_item=瓣环钙化 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 147/200 id=Dataset/group_2/2024040314353500050569525e9 diag_item=肥厚型心肌病 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 148/200 id=Dataset/group_2/2024052309595100050569557e8 diag_item=间隔缺损 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 2/7 路视频匹配
+
+[chat_moe] === 样本 149/200 id=Dataset/group_1/2024042511175800050569525e9 diag_item=右室增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 150/200 id=Dataset/group_4/2024042415574000050569525e9 diag_item=三尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 151/200 id=Dataset/group_3/2024030709102400050569525e9 diag_item=二尖瓣狭窄 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 152/200 id=Dataset/group_2/2024041005260200050569525e9 diag_item=左房增大 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 4/6 路视频匹配
+
+[chat_moe] === 样本 153/200 id=Dataset/group_5/2024041920571700050569525e9 diag_item=肥厚型心肌病 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 154/200 id=Dataset/group_4/2024042616442900050569525e9 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 2/6 路视频匹配
+
+[chat_moe] === 样本 155/200 id=Dataset/group_2/2024040311085400050569525e9 diag_item=左房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 156/200 id=Dataset/group_1/2024052306475700050569557e8 diag_item=二尖瓣脱垂 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 157/200 id=Dataset/group_4/2024052409091700050569557e8 diag_item=肥厚型心肌病 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 158/200 id=Dataset/group_1/2024052308024900050569557e8 diag_item=人工主动脉瓣 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 159/200 id=Dataset/group_2/2024051820243800050569557e8 diag_item=心包积液 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 160/200 id=Dataset/group_1/2024041215545200050569525e9 diag_item=二尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 161/200 id=Dataset/group_3/2024052419584700050569557e8 diag_item=二尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 162/200 id=Dataset/group_2/2024052321060000050569557e8 diag_item=右房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 163/200 id=Dataset/group_3/2024041016482400050569525e9 diag_item=左房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 164/200 id=Dataset/group_1/2024052319020800050569557e8 diag_item=主动脉瓣狭窄 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 165/200 id=Dataset/group_1/2024032111212800050569525e9 diag_item=心包积液 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 1/7 路视频匹配
+
+[chat_moe] === 样本 166/200 id=Dataset/group_4/2024041614221200050569525e9 diag_item=主动脉瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 167/200 id=Dataset/group_3/2024052223203000050569557e8 diag_item=心包积液 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 168/200 id=Dataset/group_1/2024050622554400050569557e8 diag_item=人工主动脉瓣 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 169/200 id=Dataset/group_1/2024041304325300050569525e9 diag_item=三尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 170/200 id=Dataset/group_3/2024042503060100050569525e9 diag_item=双房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 171/200 id=Dataset/group_4/2024042510461700050569525e9 diag_item=二尖瓣脱垂 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 172/200 id=Dataset/group_4/2024051905385900050569557e8 diag_item=右房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 173/200 id=Dataset/group_1/2024052305162000050569557e8 diag_item=间隔缺损 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 3/7 路视频匹配
+
+[chat_moe] === 样本 174/200 id=Dataset/group_4/2024040208514700050569525e9 diag_item=收缩活动减弱 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 175/200 id=Dataset/group_5/2024041523121700050569525e9 diag_item=人工主动脉瓣 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 176/200 id=Dataset/group_5/2024052402202000050569557e8 diag_item=间隔缺损 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 177/200 id=Dataset/group_5/2024041111053400050569525e9 diag_item=室壁瘤 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 178/200 id=Dataset/group_4/2024052118373900050569557e8 diag_item=升主动脉增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 179/200 id=Dataset/group_4/2024052313120400050569557e8 diag_item=室间隔基底段增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: fallback 前 2 路视频
+
+[chat_moe] === 样本 180/200 id=Dataset/group_3/2024041210300200050569525e9 diag_item=左房增大 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 1/6 路视频匹配
+
+[chat_moe] === 样本 181/200 id=Dataset/group_4/2024041603452200050569525e9 diag_item=间隔缺损 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 4/7 路视频匹配
+
+[chat_moe] === 样本 182/200 id=Dataset/group_4/2024041609123700050569525e9 diag_item=间隔缺损 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 183/200 id=Dataset/group_5/2024051901211800050569557e8 diag_item=升主动脉增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 184/200 id=Dataset/group_2/2024030702321400050569525e9 diag_item=主动脉瓣钙化 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 185/200 id=Dataset/group_5/2024051820084200050569557e8 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: fallback 前 2 路视频
+
+[chat_moe] === 样本 186/200 id=Dataset/group_1/2024040702405400050569525e9 diag_item=升主动脉增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 187/200 id=Dataset/group_2/2024031222585000050569525e9 diag_item=二尖瓣反流 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 188/200 id=Dataset/group_3/2024042309480400050569525e9 diag_item=人工主动脉瓣 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 189/200 id=Dataset/group_4/2024042909263200050569525e9 diag_item=室间隔基底段增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 3/7 路视频匹配
+
+[chat_moe] === 样本 190/200 id=Dataset/group_4/2024052408324700050569557e8 diag_item=右室增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 191/200 id=Dataset/group_1/2024041715554000050569525e9 diag_item=主动脉窦部增宽 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 192/200 id=Dataset/group_3/2024052409331900050569557e8 diag_item=主动脉瓣狭窄 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 1/6 路视频匹配
+
+[chat_moe] === 样本 193/200 id=Dataset/group_3/2024052410370900050569557e8 diag_item=瓣环钙化 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 194/200 id=Dataset/group_4/2024040521124100050569525e9 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 1/6 路视频匹配
+
+[chat_moe] === 样本 195/200 id=Dataset/group_3/2024042409161000050569525e9 diag_item=双房增大 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: 主要切面 1/1 路视频匹配
+
+[chat_moe] === 样本 196/200 id=Dataset/group_3/2024052119121000050569557e8 diag_item=左室壁增厚 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 3/6 路视频匹配
+
+[chat_moe] === 样本 197/200 id=Dataset/group_2/2024033015300300050569525e9 diag_item=心包积液 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 1/7 路视频匹配
+
+[chat_moe] === 样本 198/200 id=Dataset/group_1/2024051914333500050569557e8 diag_item=心包积液 ===
+[chat_moe] 路由: AVD (主要+辅助切面) -> vlm_best_merged_model_AVD | 视频: 主要+辅助切面 6/7 路视频匹配
+
+[chat_moe] === 样本 199/200 id=Dataset/group_5/2024042616131600050569525e9 diag_item=主动脉瓣钙化 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[chat_moe] === 样本 200/200 id=Dataset/group_1/2024041110040300050569525e9 diag_item=起搏器 ===
+[chat_moe] 路由: PVD (主要切面(1路)) -> vlm_best_merged_model_PVD | 视频: fallback 前 1 路视频
+
+[run_chat_moe] 完成, 共 200 条结果:
+  - Dataset/group_1/2024052120305300050569557e8   左室壁增厚        模型=AVD  诊断=否 ✓
+  - Dataset/group_5/2024040114273600050569525e9   心包积液         模型=PVD  诊断=否 ✓
+  - Dataset/group_2/2024042515474600050569525e9   收缩活动减弱       模型=PVD  诊断=否 ✓
+  - Dataset/group_3/2024052101542200050569557e8   主动脉窦部增宽      模型=PVD  诊断=是 ✓
+  - Dataset/group_2/2024052106243400050569557e8   主动脉窦部增宽      模型=PVD  诊断=是 ✓
+  - Dataset/group_5/2024041622220500050569525e9   三尖瓣反流        模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024041616400100050569525e9   右房增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024052220053500050569557e8   双房增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024051902484400050569557e8   右室增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_3/2024041914091000050569525e9   二尖瓣狭窄        模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024043014014900050569525e9   室间隔基底段增厚     模型=AVD  诊断=是 ✗
+  - Dataset/group_4/2024052214355900050569557e8   左室壁增厚        模型=AVD  诊断=是 ✗
+  - Dataset/group_1/2024042611152300050569525e9   人工支架         模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024041909162400050569525e9   心包积液         模型=PVD  诊断=否 ✗
+  - Dataset/group_1/2024043020535000050569525e9   升主动脉增宽       模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024052312223300050569557e8   左室壁增厚        模型=AVD  诊断=否 ✓
+  - Dataset/group_3/2024051918555000050569557e8   左室壁增厚        模型=AVD  诊断=否 ✓
+  - Dataset/group_3/2024040823422200050569525e9   左房增大         模型=PVD  诊断=是 ✓
+  - Dataset/group_3/2024052004421100050569557e8   左室壁增厚        模型=AVD  诊断=否 ✓
+  - Dataset/group_5/2024040115025600050569525e9   二尖瓣狭窄        模型=PVD  诊断=否 ✓
+  - Dataset/group_3/2024042208492300050569525e9   升主动脉增宽       模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024041615114000050569525e9   左室壁增厚        模型=AVD  诊断=是 ✗
+  - Dataset/group_3/2024052123273900050569557e8   主动脉瓣反流       模型=PVD  诊断=是 ✓
+  - Dataset/group_1/2024052013482000050569557e8   主动脉窦部增宽      模型=PVD  诊断=是 ✓
+  - Dataset/group_3/2024052317103800050569557e8   室间隔基底段增厚     模型=PVD  诊断=是 ✓
+  - Dataset/group_2/2024052212091300050569557e8   双房增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_1/20240130224428000505695f0c0   左室壁增厚        模型=AVD  诊断=是 ✗
+  - Dataset/group_3/2024042314120900050569525e9   室间隔基底段增厚     模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024041711342600050569525e9   心尖部增厚        模型=PVD  诊断=否 ✓
+  - Dataset/group_2/2024042622304600050569525e9   心包积液         模型=AVD  诊断=是 ✗
+  - Dataset/group_1/2024041010060800050569525e9   室间隔基底段增厚     模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024031903002900050569525e9   主动脉瓣钙化       模型=PVD  诊断=是 ✓
+  - Dataset/group_4/2024022413002500050569525e9   左房增大         模型=AVD  诊断=是 ✓
+  - Dataset/group_1/2024022823221700050569525e9   右室增大         模型=AVD  诊断=是 ✓
+  - Dataset/group_3/2024042510142100050569525e9   右房增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024052004072100050569557e8   左室壁增厚        模型=AVD  诊断=否 ✓
+  - Dataset/group_4/2024052408083600050569557e8   主动脉瓣反流       模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024040523004600050569525e9   心尖部增厚        模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024040810444500050569525e9   室间隔基底段增厚     模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024041621051100050569525e9   心包积液         模型=PVD  诊断=是 ✗
+  - Dataset/group_4/2024040113490600050569525e9   主动脉窦部增宽      模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024052423141400050569557e8   心包积液         模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024052221195100050569557e8   右房增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024031514304600050569525e9   右房增大         模型=PVD  诊断=是 ✓
+  - Dataset/group_1/2024052311022400050569557e8   室壁瘤          模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024052310572500050569557e8   心包积液         模型=PVD  诊断=否 ✓
+  - Dataset/group_3/2024052305482000050569557e8   二尖瓣狭窄        模型=PVD  诊断=否 ✓
+  - Dataset/group_2/2024051902222100050569557e8   左室壁增厚        模型=AVD  诊断=否 ✓
+  - Dataset/group_4/2024052400325400050569557e8   收缩活动减弱       模型=PVD  诊断=否 ✓
+  - Dataset/group_3/2024051104460200050569557e8   三尖瓣反流        模型=PVD  诊断=是 ✓
+  - Dataset/group_4/2024042021120500050569525e9   右房增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024041522003200050569525e9   三尖瓣反流        模型=PVD  诊断=否 ✓
+  - Dataset/group_3/2024032720471800050569525e9   瓣环钙化         模型=PVD  诊断=否 ✗
+  - Dataset/group_3/2024051822154000050569557e8   左房增大         模型=AVD  诊断=否 ✓
+  - Dataset/group_1/2024052308230400050569557e8   二尖瓣脱垂        模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024052213054400050569557e8   左房增大         模型=PVD  诊断=否 ✗
+  - Dataset/group_1/2024051922000700050569557e8   二叶式主动脉瓣      模型=PVD  诊断=否 ✗
+  - Dataset/group_1/2024043003105200050569525e9   升主动脉增宽       模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024042509493100050569525e9   二尖瓣反流        模型=PVD  诊断=否 ✓
+  - Dataset/group_3/2024052407392100050569557e8   主动脉瓣钙化       模型=PVD  诊断=否 ✗
+  - Dataset/group_3/2024042608431800050569525e9   二尖瓣反流        模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024051822292500050569557e8   收缩活动减弱       模型=AVD  诊断=否 ✓
+  - Dataset/group_2/2024052204294600050569557e8   升主动脉增宽       模型=PVD  诊断=是 ✓
+  - Dataset/group_5/2024051906222300050569557e8   心包积液         模型=PVD  诊断=否 ✓
+  - Dataset/group_3/2024051922464500050569557e8   收缩活动减弱       模型=AVD  诊断=否 ✗
+  - Dataset/group_5/2024042309483100050569525e9   三尖瓣反流        模型=PVD  诊断=否 ✓
+  - Dataset/group_3/2024051901450200050569557e8   心尖部增厚        模型=PVD  诊断=是 ✗
+  - Dataset/group_1/2024051920350100050569557e8   心包积液         模型=AVD  诊断=是 ✗
+  - Dataset/group_1/2024052202445500050569557e8   心尖部增厚        模型=PVD  诊断=否 ✗
+  - Dataset/group_3/2024042823544900050569525e9   起搏器          模型=PVD  诊断=是 ✓
+  - Dataset/group_3/2024052104051700050569557e8   左室壁增厚        模型=AVD  诊断=否 ✓
+  - Dataset/group_1/2024052206321900050569557e8   心包积液         模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024052321082800050569557e8   主动脉瓣增厚       模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024041710464700050569525e9   二尖瓣脱垂        模型=PVD  诊断=否 ✓
+  - Dataset/group_2/2024040510530200050569525e9   右房增大         模型=PVD  诊断=是 ✓
+  - Dataset/group_3/2024051902510100050569557e8   二尖瓣反流        模型=PVD  诊断=是 ✗
+  - Dataset/group_4/2024042523500100050569525e9   二尖瓣反流        模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024040303144200050569525e9   主动脉窦部增宽      模型=PVD  诊断=否 ✓
+  - Dataset/group_2/2024052315000600050569557e8   人工支架         模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024041223023700050569525e9   二尖瓣反流        模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024052315342100050569557e8   二尖瓣反流        模型=PVD  诊断=是 ✗
+  - Dataset/group_3/2024031821001600050569525e9   左房增大         模型=AVD  诊断=是 ✓
+  - Dataset/group_4/2024052406551300050569557e8   心包积液         模型=PVD  诊断=否 ✓
+  - Dataset/group_2/2024052209103000050569557e8   左房增大         模型=AVD  诊断=是 ✓
+  - Dataset/group_1/2024031621364300050569525e9   心包积液         模型=AVD  诊断=否 ✗
+  - Dataset/group_2/2024041115191800050569525e9   双房增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024040910244900050569525e9   主动脉瓣反流       模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024041221524100050569525e9   左室壁增厚        模型=AVD  诊断=否 ✓
+  - Dataset/group_5/2024052223244100050569557e8   室壁瘤          模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024040902112600050569525e9   心尖部增厚        模型=PVD  诊断=是 ✓
+  - Dataset/group_2/2024042510073900050569525e9   主动脉瓣钙化       模型=PVD  诊断=是 ✗
+  - Dataset/group_1/2024052222405600050569557e8   主动脉窦部增宽      模型=PVD  诊断=是 ✓
+  - Dataset/group_3/2024041713553000050569525e9   左室壁增厚        模型=AVD  诊断=否 ✓
+  - Dataset/group_3/2024041314221200050569525e9   主动脉窦部增宽      模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024052307464900050569557e8   收缩活动减弱       模型=AVD  诊断=否 ✓
+  - Dataset/group_1/2024040809515700050569525e9   左房增大         模型=PVD  诊断=是 ✓
+  - Dataset/group_1/2024052016031400050569557e8   升主动脉增宽       模型=PVD  诊断=是 ✓
+  - Dataset/group_2/2024040610455700050569525e9   室间隔基底段增厚     模型=AVD  诊断=否 ✗
+  - Dataset/group_1/2024052322494200050569557e8   主动脉瓣狭窄       模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024051906265600050569557e8   心包积液         模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024052319200200050569557e8   室间隔基底段增厚     模型=AVD  诊断=否 ✓
+  - Dataset/group_4/2024052215524600050569557e8   主动脉瓣钙化       模型=PVD  诊断=是 ✓
+  - Dataset/group_1/2024040314492100050569525e9   主动脉窦部增宽      模型=PVD  诊断=是 ✓
+  - Dataset/group_3/2024042802075100050569525e9   主动脉窦部增宽      模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024052017543200050569557e8   左房增大         模型=AVD  诊断=是 ✓
+  - Dataset/group_4/2024052412525700050569557e8   人工主动脉瓣       模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024042620563900050569525e9   收缩活动减弱       模型=PVD  诊断=否 ✗
+  - Dataset/group_4/2024052311370200050569557e8   左房增大         模型=AVD  诊断=是 ✓
+  - Dataset/group_3/2024052316533900050569557e8   主动脉瓣钙化       模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024043008460800050569525e9   人工主动脉瓣       模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024052116285000050569557e8   二尖瓣反流        模型=PVD  诊断=是 ✓
+  - Dataset/group_1/2024051821310900050569557e8   左室壁增厚        模型=AVD  诊断=否 ✓
+  - Dataset/group_2/2024052413202200050569557e8   二尖瓣反流        模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024041109250300050569525e9   双房增大         模型=AVD  诊断=否 ✓
+  - Dataset/group_5/2024041709551900050569525e9   右房增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024052409315900050569557e8   左房增大         模型=PVD  诊断=是 ✓
+  - Dataset/group_1/2024041721241300050569525e9   起搏器          模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024040122574600050569525e9   间隔缺损         模型=AVD  诊断=否 ✓
+  - Dataset/group_3/2024042520591700050569525e9   心包积液         模型=AVD  诊断=否 ✓
+  - Dataset/group_1/2024040113594800050569525e9   人工主动脉瓣       模型=PVD  诊断=否 ✓
+  - Dataset/group_3/20240122143120000505695f0c0   心包积液         模型=AVD  诊断=否 ✓
+  - Dataset/group_4/2024050613505800050569525e9   室间隔基底段增厚     模型=AVD  诊断=是 ✓
+  - Dataset/group_1/20240127042044000505695f0c0   左室壁增厚        模型=AVD  诊断=否 ✓
+  - Dataset/group_3/2024052305202000050569557e8   主动脉瓣反流       模型=PVD  诊断=是 ✓
+  - Dataset/group_3/2024052401164500050569557e8   二尖瓣脱垂        模型=PVD  诊断=否 ✓
+  - Dataset/group_3/2024052422294100050569557e8   二叶式主动脉瓣      模型=PVD  诊断=否 ✓
+  - Dataset/group_3/2024052318092000050569557e8   心尖部增厚        模型=AVD  诊断=否 ✓
+  - Dataset/group_1/2024041603405200050569525e9   左房增大         模型=AVD  诊断=是 ✓
+  - Dataset/group_4/2024052218461400050569557e8   左房增大         模型=PVD  诊断=否 ✗
+  - Dataset/group_1/2024052014094200050569557e8   双房增大         模型=PVD  诊断=是 ✓
+  - Dataset/group_3/2024051904590100050569557e8   左室壁增厚        模型=AVD  诊断=是 ✓
+  - Dataset/group_5/2024042423232400050569525e9   二尖瓣反流        模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024042908250700050569525e9   人工支架         模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024042914172200050569525e9   主动脉瓣增厚       模型=PVD  诊断=否 ✓
+  - Dataset/group_2/2024052214290700050569557e8   右房增大         模型=AVD  诊断=是 ✓
+  - Dataset/group_1/2024042309305000050569525e9   二尖瓣脱垂        模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024050721140100050569557e8   三尖瓣反流        模型=PVD  诊断=是 ✓
+  - Dataset/group_2/2024032010240100050569525e9   左房增大         模型=AVD  诊断=是 ✓
+  - Dataset/group_4/2024042103041300050569525e9   主动脉瓣钙化       模型=PVD  诊断=否 ✓
+  - Dataset/group_3/2024041304190400050569525e9   右室增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024051917272100050569557e8   人工主动脉瓣       模型=PVD  诊断=否 ✗
+  - Dataset/group_1/20240205200750000505695f0c0   室间隔基底段增厚     模型=AVD  诊断=否 ✗
+  - Dataset/group_3/2024040214245700050569525e9   主动脉瓣钙化       模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024052218222500050569557e8   二尖瓣狭窄        模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024011713370900050569557e8   心包积液         模型=PVD  诊断=是 ✓
+  - Dataset/group_5/2024042423232400050569525e9   瓣环钙化         模型=PVD  诊断=否 ✓
+  - Dataset/group_2/2024040314353500050569525e9   肥厚型心肌病       模型=PVD  诊断=否 ✓
+  - Dataset/group_2/2024052309595100050569557e8   间隔缺损         模型=AVD  诊断=否 ✓
+  - Dataset/group_1/2024042511175800050569525e9   右室增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024042415574000050569525e9   三尖瓣反流        模型=PVD  诊断=是 ✗
+  - Dataset/group_3/2024030709102400050569525e9   二尖瓣狭窄        模型=PVD  诊断=是 ✓
+  - Dataset/group_2/2024041005260200050569525e9   左房增大         模型=AVD  诊断=否 ✗
+  - Dataset/group_5/2024041920571700050569525e9   肥厚型心肌病       模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024042616442900050569525e9   左室壁增厚        模型=AVD  诊断=否 ✓
+  - Dataset/group_2/2024040311085400050569525e9   左房增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024052306475700050569557e8   二尖瓣脱垂        模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024052409091700050569557e8   肥厚型心肌病       模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024052308024900050569557e8   人工主动脉瓣       模型=PVD  诊断=否 ✓
+  - Dataset/group_2/2024051820243800050569557e8   心包积液         模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024041215545200050569525e9   二尖瓣反流        模型=PVD  诊断=否 ✓
+  - Dataset/group_3/2024052419584700050569557e8   二尖瓣反流        模型=PVD  诊断=否 ✓
+  - Dataset/group_2/2024052321060000050569557e8   右房增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_3/2024041016482400050569525e9   左房增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024052319020800050569557e8   主动脉瓣狭窄       模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024032111212800050569525e9   心包积液         模型=AVD  诊断=否 ✓
+  - Dataset/group_4/2024041614221200050569525e9   主动脉瓣反流       模型=PVD  诊断=否 ✗
+  - Dataset/group_3/2024052223203000050569557e8   心包积液         模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024050622554400050569557e8   人工主动脉瓣       模型=PVD  诊断=否 ✗
+  - Dataset/group_1/2024041304325300050569525e9   三尖瓣反流        模型=PVD  诊断=是 ✗
+  - Dataset/group_3/2024042503060100050569525e9   双房增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024042510461700050569525e9   二尖瓣脱垂        模型=PVD  诊断=是 ✗
+  - Dataset/group_4/2024051905385900050569557e8   右房增大         模型=PVD  诊断=否 ✗
+  - Dataset/group_1/2024052305162000050569557e8   间隔缺损         模型=AVD  诊断=否 ✓
+  - Dataset/group_4/2024040208514700050569525e9   收缩活动减弱       模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024041523121700050569525e9   人工主动脉瓣       模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024052402202000050569557e8   间隔缺损         模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024041111053400050569525e9   室壁瘤          模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024052118373900050569557e8   升主动脉增宽       模型=PVD  诊断=是 ✓
+  - Dataset/group_4/2024052313120400050569557e8   室间隔基底段增厚     模型=AVD  诊断=是 ✗
+  - Dataset/group_3/2024041210300200050569525e9   左房增大         模型=AVD  诊断=否 ✓
+  - Dataset/group_4/2024041603452200050569525e9   间隔缺损         模型=AVD  诊断=否 ✓
+  - Dataset/group_4/2024041609123700050569525e9   间隔缺损         模型=PVD  诊断=否 ✓
+  - Dataset/group_5/2024051901211800050569557e8   升主动脉增宽       模型=PVD  诊断=否 ✓
+  - Dataset/group_2/2024030702321400050569525e9   主动脉瓣钙化       模型=PVD  诊断=是 ✓
+  - Dataset/group_5/2024051820084200050569557e8   左室壁增厚        模型=AVD  诊断=否 ✓
+  - Dataset/group_1/2024040702405400050569525e9   升主动脉增宽       模型=PVD  诊断=否 ✓
+  - Dataset/group_2/2024031222585000050569525e9   二尖瓣反流        模型=PVD  诊断=是 ✓
+  - Dataset/group_3/2024042309480400050569525e9   人工主动脉瓣       模型=PVD  诊断=否 ✓
+  - Dataset/group_4/2024042909263200050569525e9   室间隔基底段增厚     模型=AVD  诊断=是 ✓
+  - Dataset/group_4/2024052408324700050569557e8   右室增大         模型=PVD  诊断=否 ✓
+  - Dataset/group_1/2024041715554000050569525e9   主动脉窦部增宽      模型=PVD  诊断=是 ✗
+  - Dataset/group_3/2024052409331900050569557e8   主动脉瓣狭窄       模型=AVD  诊断=否 ✓
+  - Dataset/group_3/2024052410370900050569557e8   瓣环钙化         模型=PVD  诊断=是 ✓
+  - Dataset/group_4/2024040521124100050569525e9   左室壁增厚        模型=AVD  诊断=否 ✓
+  - Dataset/group_3/2024042409161000050569525e9   双房增大         模型=PVD  诊断=是 ✓
+  - Dataset/group_3/2024052119121000050569557e8   左室壁增厚        模型=AVD  诊断=是 ✗
+  - Dataset/group_2/2024033015300300050569525e9   心包积液         模型=AVD  诊断=否 ✓
+  - Dataset/group_1/2024051914333500050569557e8   心包积液         模型=AVD  诊断=是 ✓
+  - Dataset/group_5/2024042616131600050569525e9   主动脉瓣钙化       模型=PVD  诊断=否 ✗
+  - Dataset/group_1/2024041110040300050569525e9   起搏器          模型=PVD  诊断=否 ✓
+  完整结果: /home/mzhao/ECHO_VIEW/EchoView-main/MoE/data/result_test_batch_200.json

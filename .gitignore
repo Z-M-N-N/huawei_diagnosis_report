@@ -1,0 +1,63 @@
+# ===== 模型权重 =====
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.h5
+*.hdf5
+*.onnx
+*.pb
+*.tflite
+*.pkl
+*.pickle
+*.model
+*.weights
+*.npz
+*.npy
+*.gguf
+*.msgpack
+*.engine
+*.trt
+**/Data/**/*.json
+**/Data/*.json
+**/data/**/*.json
+**/data/*.json
+# ===== 权重/日志目录 =====
+checkpoint/
+checkpoints/
+weights/
+runs/
+wandb/
+logs/
+output/
+outputs/
+*.log
+**/VLM/Model/
+**/ckpt-*/
+**/checkpoint-*/
+*.json
+# ===== Python 缓存 =====
+__pycache__/
+*.py[cod]
+*.so
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+venv/
+.venv/
+env/
+
+# ===== 系统/编辑器 =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===== 数据（按需保留/删除）=====
+data/
+datasets/
+*.zip
+*.tar
+*.tar.gz
+EOF

@@ -1,0 +1,13 @@
+time: 2026-10-15 15:35:03
+cwd: /home/mzhao/华为项目/VLM
+cmd: python src/inference.py --model_path Model/good_pvd_merged --test_json out/pvd_no_mv_2026-10-15/input/test_remap.json --diag_item_config Data/diag_info.json --diag_item all --sample_size 300 --num_frames 16 --torch_dtype bfloat16 --save_results out/pvd_no_mv_2026-10-15
+CUDA_VISIBLE_DEVICES=2
+seed=42 (inference.py default)
+diag_item: all(28); per-class cap=300 (per diag_item)
+remap: /home/mzhao/ECHO_VIEW/Data -> /home/mzhao/华为项目/Data
+git_commit: NA dirty:0
+--- pip freeze (key pkgs) ---
+decord==0.6.0
+peft==0.18.1
+scikit-learn==1.7.2
+torch==2.7.0+cu128
